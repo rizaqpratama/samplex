@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.t_kost.kost_tegal.Home">
+
+    <include layout="@layout/toolsbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/include">
+    </include>
+    <LinearLayout
+        android:background="#e07529"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.8"
+        android:padding="10dp">
+<LinearLayout
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+    <Button
+        android:scaleType="fitXY"
+        android:background="@drawable/faqroom"
+        android:id="@+id/btDaftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="92dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Daftar Kost"
+        android:id="@+id/tvDaftar"
+        android:textColor="#a51824"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/map"
+        android:id="@+id/btMap" />
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="PETA"
+            android:id="@+id/tvMap"
+            android:textColor="#a51824"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/panduan"
+                android:id="@+id/btPanduan" />
+            <TextView
+                android:layout_width="92dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Panduan"
+                android:id="@+id/tvPanduan"
+                android:textColor="#a51824"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/aboutus"
+                android:id="@+id/btAboutUs" />
+            <TextView
+                android:layout_width="92dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Tentang Kami"
+                android:id="@+id/tvAboutUs"
+                android:textColor="#a51824"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/logout"
+        android:id="@+id/btExit"
+        android:textColor="#010101"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp" />
+
+</RelativeLayout>

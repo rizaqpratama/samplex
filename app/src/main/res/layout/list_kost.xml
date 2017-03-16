@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/noimage"
+        android:scaleType="fitXY"
+        android:id="@+id/img"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNamaKos"
+        android:text="Nama Kos"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAlamat"
+        android:text="Alamat"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#000000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTarif"
+        android:text="Tarif"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="end"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>

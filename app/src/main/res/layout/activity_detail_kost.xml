@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.t_kost.kost_tegal.DetailKost">
+
+    <ProgressBar
+        android:id="@+id/pB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+    <include layout="@layout/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scaleType="fitCenter"
+        android:id="@+id/include">
+    </include>
+    <TextView
+        android:layout_below="@+id/include"
+        android:text="Tempat Kost di"
+        android:textSize="30sp"
+        android:id="@+id/tvJdlKost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3f3f3f"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+    <AutoCompleteTextView
+        android:layout_below="@+id/tvJdlKost"
+        android:id="@+id/etSearch"
+        android:hint="Search"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_below="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:id="@+id/listView">
+        </ListView>
+        <!--<ListView-->
+            <!--android:id="@+id/lvList"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+
+    </LinearLayout>
+</RelativeLayout>

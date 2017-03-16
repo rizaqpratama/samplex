@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.t_kost.kost_tegal.KostRinci">
+<include layout="@layout/toolbar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/include">
+</include>
+    <ImageView
+        android:layout_below="@id/include"
+        android:id="@+id/ivGambar"
+        android:src="@drawable/back"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="fitXY" />
+<ScrollView
+    android:background="@drawable/edittext_transparent_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:layout_below="@+id/ivGambar"
+    android:layout_above="@+id/btMap">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detail Kost"
+            android:id="@+id/tvJudulnya"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:background="#8a8a8a"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Kos"
+            android:id="@+id/tvNamaKos"
+            android:textSize="25sp"
+            android:layout_marginBottom="20sp"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/acw"
+            android:layout_weight="0.05" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemilik Kos"
+            android:id="@+id/tvPemilik"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/cellp"
+            android:layout_weight="0.05" />
+        <TextView
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:text="No HP"
+            android:id="@+id/tvNoHp"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/home"
+            android:layout_weight="0.05" />
+        <TextView
+            android:layout_width="377dp"
+            android:layout_height="wrap_content"
+            android:text="Alamat Kos"
+            android:id="@+id/tvAlamat"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.48" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/cash"
+            android:layout_weight="0.05" />
+        <TextView
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:text="Tarif Kos"
+            android:id="@+id/tvTarif"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/information"
+            android:layout_weight="0.05" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keterangan Kos"
+            android:id="@+id/tvKeterangan"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.67" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            android:id="@+id/textView4"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarif"
+            android:visibility="gone"
+            android:id="@+id/textView5"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WOYOYOYOYO"
+            android:visibility="gone"
+            android:id="@+id/textView6"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</ScrollView>
+    <Button
+        android:text="@string/show_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btMap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"/>
+</RelativeLayout>

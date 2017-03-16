@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.t_kost.kost_tegal.AboutUs">
+<include layout="@layout/toolbar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/include"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true">
+</include>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/include">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T-Kost adalah aplikasi yang dibuat untuk memudahkan masyarakat maupun mahasiswa dalam mencari tempat hunian sementara yang berada di Kota Tegal."
+            android:id="@+id/textView4"
+            android:textAlignment="inherit"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:background="@drawable/pin"
+            android:layout_weight="0.08" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alpine , 13040013."
+            android:textAlignment="inherit"
+            android:id="@+id/textView5"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ji"
+            android:layout_weight="0.08" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aji Nazarudin, 13040031."
+            android:textAlignment="inherit"
+            android:id="@+id/textView6"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mahasiswa D3 Teknik Komputer Politeknik Harapan Bersama Kota Tegal"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:id="@+id/textView7"
+            android:layout_marginBottom="10dp"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/email"
+            android:layout_weight="0.08" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email : •lakco199@gmail.com
+            •nmetera@gmail.com"
+            android:textStyle="italic"
+            android:textAlignment="inherit"
+            android:id="@+id/textView6"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

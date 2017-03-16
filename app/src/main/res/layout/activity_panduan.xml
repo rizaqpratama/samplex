@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.t_kost.kost_tegal.Panduan">
+    <include layout="@layout/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/include">
+    </include>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/include">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tombol Menu T-Kost"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/scrollView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="52dp"
+                android:layout_weight="0.56" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/faqroom"
+                android:layout_weight="0.08" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Daftar Kost, Pada Menu ini anda dapat mencari tempat kost yang anda inginkan berdasarkan Kecamatan"
+                android:id="@+id/textView5"
+                android:textSize="20sp"
+                android:textAlignment="inherit"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.18" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/map"
+                android:layout_weight="0.08" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Peta, Peta menunjukan letak posisi anda berada."
+                android:textSize="20sp"
+                android:textAlignment="inherit"
+                android:id="@+id/textView6"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/logout"
+                android:layout_weight="0.08" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Keluar, Untuk keluar dari aplikasi di bagian kanan atas pada tampilan utama T-Kost."
+                android:textSize="20sp"
+                android:textAlignment="inherit"
+                android:id="@+id/textView7"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/tmbh"
+                android:layout_weight="0.08" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Jika anda Pemilik Kost dan Tempat Kost anda ingin ditambahkan ke dalam Aplikasi T-Kost bisa menghubungi e-mail Admin di Menu utama T-Kost Tentang Kami."
+                android:textSize="20sp"
+                android:textAlignment="inherit"
+                android:id="@+id/textView8"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.43" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
